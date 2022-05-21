@@ -60,20 +60,6 @@
 
 /* Home Card Section */
 
-.home-card-section {
-    position: relative !important;
-    padding-top: 50px !important;
-    padding-bottom: 30px !important;
-    background: whitesmoke !important;
-}
-
-.home-card-section-heading {
-    color: rgb(0, 0, 0) !important;
-    font-size: 2.3em !important;
-    font-weight: 500 !important;
-    padding-top: 10px !important;
-}
-
 .home-card {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
@@ -104,12 +90,12 @@
     height: 200px;
 }
 
-.card-title {
+.home-card-title {
     color: black;
     font-weight: 600;
 }
 
-.card-text {
+.home-card-text {
     color: grey;
     padding-top: 5px;
     text-overflow: ellipsis;

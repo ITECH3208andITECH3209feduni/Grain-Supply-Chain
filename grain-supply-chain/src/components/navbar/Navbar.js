@@ -12,6 +12,12 @@ import './NavbarStyle.css';
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [pathChanged, updatePathChanged] = useState(false);
+
+  function onClicked(state) {
+    updateExpanded(state)
+    updatePathChanged(!pathChanged)
+  }
 
   function scrollHandler() {
     if (window.scrollY >= 20) { updateNavbar(true); } else { updateNavbar(false); }
@@ -20,7 +26,7 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
-    <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"} >
+    <Navbar expanded={expand} fixed="top" expand="md" className={(navColour || window.location.pathname !== "/") ? "sticky" : "navbar"} >
       <Container>
         <Navbar.Brand href="/" className="d-flex"><strong className="navbar-brand"> GSC</strong></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => { updateExpanded(expand ? false : "expanded"); }}>
@@ -29,36 +35,36 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/" onClick={() => onClicked(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/farm" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/farm" onClick={() => onClicked(false)}>
                 <GiWheat style={{ marginBottom: "2px" }} /> Farm
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/storage" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/storage" onClick={() => onClicked(false)}>
                 <MdOutlineStore style={{ marginBottom: "2px" }} /> Storage
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/transportation" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/transportation" onClick={() => onClicked(false)}>
                 <BsTruck style={{ marginBottom: "2px" }} /> Transportation
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/export" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/export" onClick={() => onClicked(false)}>
                 <MdImportExport style={{ marginBottom: "2px" }} /> Export
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/farm" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/farm" onClick={() => onClicked(false)}>
                 <MdOutlineContacts style={{ marginBottom: "2px" }} /> Contact us
               </Nav.Link>
             </Nav.Item>

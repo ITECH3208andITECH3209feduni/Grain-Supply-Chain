@@ -8,9 +8,9 @@ import exportImg from "../../assets/home/home-export.jpg";
 
 function HomeCardSection() {
   return (
-    <Container fluid className="home-card-section">
+    <Container fluid className="page-main-section">
       <Container>
-        <h1 className="home-card-section-heading">
+        <h1 className="page-heading-text">
           Grain Supply <strong className="primary-dark">Chain </strong>
         </h1>
         <p style={{ color: "#6c757d" }}>

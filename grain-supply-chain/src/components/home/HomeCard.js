@@ -9,8 +9,8 @@ function HomeCard(props) {
     <Card className="home-card-view">
       <Card.Img className="home-card-img-top" variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title className="card-title">{props.title}</Card.Title>
-        <Card.Text className="card-text" style={{ textAlign: "justify" }}>{props.description}</Card.Text>
+        <Card.Title className="home-card-title">{props.title}</Card.Title>
+        <Card.Text className="home-card-text" style={{ textAlign: "justify" }}>{props.description}</Card.Text>
         <Nav.Link as={Link} to={props.link}><Button variant="primary">View More</Button> </Nav.Link>
       </Card.Body>
     </Card>

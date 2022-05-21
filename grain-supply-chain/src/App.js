@@ -1,15 +1,14 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/home/Home'
 import React, { useState, useEffect } from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Preloader from "../src/components/Pre";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import { Route, Routes, Navigate } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
-import "./style.css";
-import "./App.css";
+import Home from './components/home/Home'
+import Farm from './components/farm/Farm';
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import "./style.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -30,7 +29,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/farm" element={<Home />} />
+          <Route path="/farm" element={<Farm />} />
           <Route path="/contact-us" element={<Home />} />
           <Route path="/nn" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
