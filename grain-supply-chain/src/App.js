@@ -8,6 +8,7 @@ import Home from './components/home/Home'
 import Farm from './components/farm/Farm';
 import Transport from './components/transport/Transport';
 import Storage from "./components/storage/Storage";
+import Contact from "./components/contact/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./style.css";
@@ -34,7 +35,7 @@ function App() {
           <Route path="/farm" element={<Farm />} />
           <Route path="/storage" element={<Storage />} />
           <Route path="/transport" element={<Transport />} />
-          <Route path="/contact-us" element={<Home />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/nn" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
