@@ -64,7 +64,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={Link} to="/farm" onClick={() => onClicked(false)}>
+              <Nav.Link as={Link} to="/contact-us" onClick={() => onClicked(false)}>
                 <MdOutlineContacts style={{ marginBottom: "2px" }} /> Contact us
               </Nav.Link>
             </Nav.Item>

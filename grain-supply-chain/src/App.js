@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Home from './components/home/Home'
 import Farm from './components/farm/Farm';
+import Storage from "./components/storage/Storage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./style.css";
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/farm" element={<Farm />} />
+          <Route path="/storage" element={<Storage />} />
           <Route path="/contact-us" element={<Home />} />
           <Route path="/nn" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
