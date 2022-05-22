@@ -6,7 +6,7 @@ function Storage() {
     return (
         <Container fluid className="page-main-section">
             <Container>
-                <h1 className="page-heading-text" style={{ marginTop: "70px" }}>Storage</h1>
+                <h1 className="page-heading-text" style={{ marginTop: "80px" }}>Storage</h1>
                 <Card id="link" className="storage-outer-card-view">
                     <Card.Body>
                         <Tabs defaultActiveKey="silos" className="mb-1">

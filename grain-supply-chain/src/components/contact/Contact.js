@@ -7,7 +7,7 @@ function Contact() {
     return (
         <Container fluid className="page-main-section">
             <Container>
-                <h1 className="page-heading-text" style={{ marginTop: "70px" }}>Contact us</h1>
+                <h1 className="page-heading-text" style={{ marginTop: "80px" }}>Contact us</h1>
                 <Row style={{ justifyContent: "space-evenly", marginTop: "50px" }}>
                     <Col md={5} className="contact-col">
                         <Card className="contact-card-view">
