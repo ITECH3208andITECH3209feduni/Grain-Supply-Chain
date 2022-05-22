@@ -53,8 +53,8 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/transportation" onClick={() => onClicked(false)}>
-                <BsTruck style={{ marginBottom: "2px" }} /> Transportation
+              <Nav.Link as={Link} to="/transport" onClick={() => onClicked(false)}>
+                <BsTruck style={{ marginBottom: "2px" }} /> Transport
               </Nav.Link>
             </Nav.Item>
 

@@ -39,7 +39,7 @@ function HomeCardSection() {
               imgPath={transportationImg}
               title="Transportation"
               description="There is no single grain supply chain for Australia. Various supply chain options are available in all states, with grain being exported in bulk or containers through 25 port terminals spread around Australia’s coastline. Grain is delivered to each port via road or rail, or their combination."
-              link="/transportation" />
+              link="/transport" />
           </Col>
 
           <Col md={3} className="home-card">
