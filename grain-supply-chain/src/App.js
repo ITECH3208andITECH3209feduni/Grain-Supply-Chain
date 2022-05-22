@@ -6,8 +6,9 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Home from './components/home/Home'
 import Farm from './components/farm/Farm';
-import Transport from './components/transport/Transport';
 import Storage from "./components/storage/Storage";
+import Transport from './components/transport/Transport';
+import Export from "./components/export/Export";
 import Contact from "./components/contact/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -35,8 +36,8 @@ function App() {
           <Route path="/farm" element={<Farm />} />
           <Route path="/storage" element={<Storage />} />
           <Route path="/transport" element={<Transport />} />
+          <Route path="/export" element={<Export />} />
           <Route path="/contact-us" element={<Contact />} />
-          <Route path="/nn" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

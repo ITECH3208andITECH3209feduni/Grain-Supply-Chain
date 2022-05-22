@@ -9,7 +9,7 @@ function Transport() {
     return (
         <Container fluid className="page-main-section">
             <Container>
-                <h1 className="page-heading-text" style={{ marginTop: "70px" }}>Transportation</h1>
+                <h1 className="page-heading-text" style={{ marginTop: "80px" }}>Transportation</h1>
 
                 <Row style={{ justifyContent: "space-evenly", marginTop: "50px" }}>
                     <Col md={6} className="transport-col">
