@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import parse, { domToReact } from 'html-react-parser';
-import { Link } from 'react-router-dom';
 
 function FarmInnerCard(props) {
     return (
@@ -20,7 +19,7 @@ function parseWithLinks(text) {
     const options = {
         replace: ({ name, attribs, children }) => {
             if (name === 'a' && attribs.href) {
-                return <Link to={attribs.href}>{domToReact(children)}</Link>;
+                return <a href={attribs.href} target="_blank">{domToReact(children)}</a>;
             }
         }
     };
