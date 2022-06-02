@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import ExportInnerCard from "./ExportInnerCard";
-import './ExportStyle.css';
+import harvesttInnerCard from "./harvestInnerCard";
+import './harvest.css';
 
 function harvest() {
     return (
@@ -12,7 +12,8 @@ function harvest() {
                     <Card.Header className="harvest-outer-card-header">For harvesting</Card.Header>
                     <Card.Body>
                         <Card.Text className="harvest-outer-card-text">
-                            Ensure grain growers are well represented and set a progressive agenda to influence government and industry decision-making. GrainGrowers policy solutions are grower-focussed and grower-supported.
+                            Ensure grain growers are well represented and set a progressive agenda to 
+                            influence government and industry decision-making. GrainGrowers policy solutions are grower-focussed and grower-supported.
                         </Card.Text>
                         <Row style={{ justifyContent: "space-evenly" }}>
                             
