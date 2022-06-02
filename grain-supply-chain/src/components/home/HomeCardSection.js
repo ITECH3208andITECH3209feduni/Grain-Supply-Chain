@@ -49,6 +49,14 @@ function HomeCardSection() {
               description="Australia is an important food producer and exporter in the world. The main crops include wheat, barley, rapeseed, and sorghum. In the past ten years, Australia’s annual grain output has been around 35 to 45 million tons, of which 11 million tons are used for domestic consumption and the rest is used for exports. Most of the domestic consumption is concentrated in East Australia, mainly because East Australia is a densely populated area in Australia."
               link="/export" />
           </Col>
+            <Col md={3} className="home-card">
+            <HomeCard
+            imgPath= {farmImg}
+            title="Harvest"
+            description="The Grain harvesting process"
+            link="/harvest" />
+          </Col>
+
         </Row>
       </Container>
     </Container>
