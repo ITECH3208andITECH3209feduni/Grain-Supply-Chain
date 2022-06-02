@@ -12,8 +12,8 @@ function Farm() {
                     <Card.Header className="farm-outer-card-header">For Farming</Card.Header>
                     <Card.Body>
                         <Card.Text className="farm-outer-card-text">
-                            Ensure grain growers are well represented and set a progressive agenda to influence government and industry decision-making. GrainGrowers policy solutions are grower-focussed and grower-supported.
-                            Harvest
+                            Ensure grain growers are well represented and set a progressive agenda to influence government and industry decision-making. GrainGrowers policy solutions are grower-focussed and grower-supported. Harvest
+                         
                         </Card.Text>
                         <Row style={{ justifyContent: "space-evenly" }}>
                             <Col md={4} className="farm-inner-col">
