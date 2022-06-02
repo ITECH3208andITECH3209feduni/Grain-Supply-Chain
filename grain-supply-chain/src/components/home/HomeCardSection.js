@@ -52,7 +52,7 @@ function HomeCardSection() {
             
          <Col md={3} className="home-card">
             <HomeCard
-            imgPath= {farmImg}
+            
             title="Harvest"
             description="The Grain harvesting process"
             link="/harvest" />
