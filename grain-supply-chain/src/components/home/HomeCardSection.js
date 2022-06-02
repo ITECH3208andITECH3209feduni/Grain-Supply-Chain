@@ -54,7 +54,7 @@ function HomeCardSection() {
             imgPath= {farmImg}
             title="Harvest"
             description="The Grain harvesting process"
-            link="/farm" />
+            
           </Col>
 
         </Row>
