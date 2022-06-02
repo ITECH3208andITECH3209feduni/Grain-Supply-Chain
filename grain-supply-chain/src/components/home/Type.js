@@ -5,7 +5,7 @@ function Type() {
   return (
     <Typewriter
       options={{
-        strings: ["Farm", "Storage", "Transportation", "Export",],
+        strings: ["Farm", "Storage", "Transportation", "Export","harvest"],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
