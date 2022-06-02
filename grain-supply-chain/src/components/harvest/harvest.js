@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import './harvest.css';
+import ExportInnerCard from "./ExportInnerCard";
+import './ExportStyle.css';
 
 function harvest() {
     return (
