@@ -13,6 +13,7 @@ function Farm() {
                     <Card.Body>
                         <Card.Text className="farm-outer-card-text">
                             Ensure grain growers are well represented and set a progressive agenda to influence government and industry decision-making. GrainGrowers policy solutions are grower-focussed and grower-supported.
+                            Harvest
                         </Card.Text>
                         <Row style={{ justifyContent: "space-evenly" }}>
                             <Col md={4} className="farm-inner-col">
@@ -54,18 +55,7 @@ function Farm() {
                             <br />4. The process of continuous improvement is applied to quality management and pursues excellent performance.
                             <br /><br />For details: <a href="https://grains.graincorp.com.au/wp-content/uploads/2021/02/Quality-Policy-Statement.pdf">GrainCrop: Quality Policy Statement</a>
                         </Card.Text>
-<Card className="farm-outer-card-view">
-                    <Card.Header className="farm-outer-card-header">For Grains</Card.Header>
-                    <Card.Body>
-                        <Card.Text className="farm-outer-card-text">
-                            GrainCorp’s strict adherence to quality and classification for varieties of grain helps to ensure high demand and a premium price point for Australian grain.
-                            <br /><br /><strong>Quality Policy:</strong>
-                            <br /><br />1. The responsibility to provide safe and suitable food is crucial.
-                            <br />2. Meet various quality needs and expectations of stakeholders.
-                            <br />3. Manage resources, including personnel, infrastructure and work environment.
-                            <br />4. The process of continuous improvement is applied to quality management and pursues excellent performance.
-                            <br /><br />For details: <a href="https://grains.graincorp.com.au/wp-content/uploads/2021/02/Quality-Policy-Statement.pdf">GrainCrop: Quality Policy Statement</a>
-                        </Card.Text>
+
                         <Row style={{ justifyContent: "space-evenly" }}>
                             <Col md={4} className="farm-inner-col">
                                 <FarmInnerCard
