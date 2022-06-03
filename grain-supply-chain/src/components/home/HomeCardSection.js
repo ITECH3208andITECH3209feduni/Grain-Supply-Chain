@@ -54,7 +54,7 @@ function HomeCardSection() {
             <HomeCard
             imgPath={farmImg}
             title="Harvest"
-            description="The Grain harvesting process"
+            description="Grain harvesting is an extraordinary process, with many steps. As this takes on process during September to December"
             link="/harvest" />
           </Col>
 
