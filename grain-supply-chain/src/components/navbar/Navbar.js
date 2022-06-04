@@ -9,7 +9,7 @@ import { GiWheat } from "react-icons/gi";
 import { MdOutlineStore, MdImportExport, MdOutlineContacts } from "react-icons/md";
 import './NavbarStyle.css';
 
-function NavBar() {
+function NavBar(props) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [pathChanged, updatePathChanged] = useState(false);
@@ -24,6 +24,11 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  function onLoginBtnClicked(loginModalState, state) {
+    props.onLoginModalStateChanged(loginModalState)
+    onClicked(state)
+  }
 
   return (
     <Navbar expanded={expand} fixed="top" expand="md" className={(navColour || window.location.pathname !== "/") ? "sticky" : "navbar"} >
@@ -66,6 +71,11 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link as={Link} to="/contact-us" onClick={() => onClicked(false)}>
                 <MdOutlineContacts style={{ marginBottom: "2px" }} /> Contact us
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="#" onClick={() => onLoginBtnClicked(true, false)}>
+                <MdOutlineContacts style={{ marginBottom: "2px" }} /> Generate Report
               </Nav.Link>
             </Nav.Item>
           </Nav>

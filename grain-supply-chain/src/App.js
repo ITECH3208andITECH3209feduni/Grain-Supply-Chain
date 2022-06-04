@@ -10,12 +10,14 @@ import Storage from "./components/storage/Storage";
 import Transport from './components/transport/Transport';
 import Export from "./components/export/Export";
 import Contact from "./components/contact/Contact";
+import Login from "./components/login/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./style.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
+  const [loginModalState, updateLoginModalState] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -25,11 +27,15 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  function onLoginModalStateChanged(loginModalState) {
+    updateLoginModalState(loginModalState)
+  }
+
   return (
     <>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+        <Navbar loginModalState={loginModalState} onLoginModalStateChanged={onLoginModalStateChanged} />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -40,6 +46,7 @@ function App() {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+        <Login loginModalState={loginModalState} onLoginModalStateChanged={onLoginModalStateChanged} />
         <Footer />
       </div></>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import TransportInnerCard from "./TransportInnerCard";
 import imgTransportType from "../../assets/transport/transport_type.PNG";
 import imgTransportLocation from "../../assets/transport/transport_location.PNG";
