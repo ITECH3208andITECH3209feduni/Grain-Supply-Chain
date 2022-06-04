@@ -10,7 +10,7 @@ import Storage from "./components/storage/Storage";
 import Transport from './components/transport/Transport';
 import Export from "./components/export/Export";
 import Contact from "./components/contact/Contact";
-import harvest from "./components/harvest/harvest";
+import Harvest from "./components/harvest/Harvest";
 import Login from "./components/login/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -45,7 +45,7 @@ function App() {
           <Route path="/transport" element={<Transport />} />
           <Route path="/export" element={<Export />} />
           <Route path="/contact-us" element={<Contact />} />
-           <Route path="/harvest" element={<harvest />} />
+          <Route path="/harvest" element={<Harvest />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Login loginModalState={loginModalState} onLoginModalStateChanged={onLoginModalStateChanged} />

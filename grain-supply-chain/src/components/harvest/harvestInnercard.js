@@ -1,8 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import parse, { domToReact } from 'html-react-parser';
+import './HarvestStyle.css';
 
-function harvestInnercard(props) {
+function HarvestInnercard(props) {
     return (
         <Card className="harvest-inner-card-view">
             <Card.Header className="harvest-inner-card-header">{props.header}</Card.Header>
@@ -13,7 +14,7 @@ function harvestInnercard(props) {
     );
 }
 
-export default harvestInnercard;
+export default HarvestInnercard;
 
 function parseWithLinks(text) {
     const options = {
