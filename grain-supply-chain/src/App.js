@@ -12,6 +12,7 @@ import Export from "./components/export/Export";
 import Contact from "./components/contact/Contact";
 import Harvest from "./components/harvest/Harvest";
 import Login from "./components/login/Login";
+import GenerateReport from "./components/report/GenerateReport";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./style.css";
@@ -46,6 +47,7 @@ function App() {
           <Route path="/export" element={<Export />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/harvest" element={<Harvest />} />
+          <Route path="/generate-report" element={<GenerateReport />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Login loginModalState={loginModalState} onLoginModalStateChanged={onLoginModalStateChanged} />
