@@ -1,0 +1,14 @@
+.storage-outer-card-view {
+    color: black !important;
+    border-radius: 6px !important;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.storage-tab-card-text {
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    line-height: 1.5 !important;
+}
