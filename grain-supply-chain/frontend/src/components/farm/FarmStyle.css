@@ -1,0 +1,44 @@
+.farm-outer-card-view {
+    color: black !important;
+    border-radius: 6px !important;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.farm-outer-card-header {
+    color: black;
+    font-weight: 600;
+    font-size: 110%;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.farm-outer-card-text {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    line-height: 1.5 !important;
+}
+
+.farm-inner-card-view {
+    color: black !important;
+    border-radius: 6px !important;
+}
+
+.farm-inner-card-header {
+    color: black;
+    font-weight: 500;
+}
+
+.farm-inner-card-text {
+    line-height: 1.8 !important;
+}
+
+.farm-inner-col {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    height: auto !important;
+}

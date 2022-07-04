@@ -1,0 +1,106 @@
+@import "../../style.css";
+
+.home-header {
+    padding-top: 70px !important;
+}
+
+.home-section {
+    position: relative;
+    z-index: -1;
+    background-image: var(--image-gradient), url(../../assets/home/home-grain-bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+}
+
+.home-content {
+    padding: 9rem 0 2rem !important;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.heading {
+    font-size: 2.4em !important;
+    padding-left: 50px !important;
+}
+
+.heading-name {
+    font-size: 2.5em !important;
+    padding-left: 45px !important;
+}
+
+.main-name {
+    color: var(--primary-color);
+}
+
+.Typewriter__wrapper {
+    font-size: 2.5em !important;
+    color: var(--primary-dark-color) !important;
+    font-weight: 600 !important;
+}
+
+.Typewriter__cursor {
+    font-size: 2.4em !important;
+    color: var(--primary-dark-color) !important;
+}
+
+@media (max-width: 767px) {
+    .Typewriter__wrapper {
+        font-size: 1.4em !important;
+        font-weight: 500 !important;
+        position: absolute !important;
+    }
+
+    .Typewriter__cursor {
+        display: none !important;
+    }
+}
+
+
+/* Home Card Section */
+
+.home-card {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    height: auto !important;
+}
+
+.home-card-view {
+    box-shadow: 0 3px 4px 2px rgba(90, 88, 91, 0.459) !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    border-radius: 10px !important;
+}
+
+.home-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 3px 4px 4px rgba(61, 59, 62, 0.459) !important;
+}
+
+.home-card-img-top {
+    padding: 0px !important;
+    opacity: 0.9 !important;
+    border-radius: 10px !important;
+    height: 200px;
+}
+
+.home-card-title {
+    color: black;
+    font-weight: 600;
+}
+
+.home-card-text {
+    color: grey;
+    padding-top: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
