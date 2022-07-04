@@ -1,0 +1,36 @@
+.export-outer-card-view {
+    color: black !important;
+    border-radius: 6px !important;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.export-outer-card-header {
+    color: black;
+    font-weight: 600;
+    font-size: 110%;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.export-inner-card-view {
+    color: black !important;
+    border-radius: 6px !important;
+}
+
+.export-inner-card-header {
+    color: black;
+    font-weight: 500;
+}
+
+.export-inner-card-text {
+    line-height: 1.8 !important;
+}
+
+.export-inner-col {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    height: auto !important;
+}
